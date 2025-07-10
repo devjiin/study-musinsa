@@ -1,4 +1,4 @@
-import Navigation from "./_components/Navigation/Navigation";
+import LocalNavigation from "./_components/LocalNavigation/LocalNavigation";
 import "./globals.css";
 
 export default function RootLayout({
@@ -9,7 +9,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navigation />
+        <h1>MUSINSA</h1>
+        <LocalNavigation />
         {children}
       </body>
     </html>
