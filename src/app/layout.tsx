@@ -9,11 +9,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div id="__next">
-          <h1>MUSINSA</h1>
-          <LocalNavigation />
-          {children}
-        </div>
+        <h1>MUSINSA</h1>
+        <LocalNavigation />
+        {children}
       </body>
     </html>
   );

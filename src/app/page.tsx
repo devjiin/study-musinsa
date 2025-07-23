@@ -1,15 +1,5 @@
-// import ContentTabs from "@/components/ContentTabs/ContentTabs";
-import initMockAPI from "mocks";
-
-if (process.env.NODE_ENV === "development") {
-  initMockAPI();
-}
+import ContentTabs from "@/components/ContentTabs/ContentTabs";
 
 export default function Home() {
-  return (
-    <>
-      {/* <ContentTabs /> */}
-      <h1>Hello, Next.js!</h1>
-    </>
-  );
+  return <>{<ContentTabs />}</>;
 }
