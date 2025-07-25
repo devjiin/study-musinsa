@@ -5,11 +5,24 @@
   --foreground: #171717;
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-white-rgba: rgba(225, 225, 225, 0.8);
+}
+
+@layer components {
+  .for-a11y {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    text-indent: -5000em;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

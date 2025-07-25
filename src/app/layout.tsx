@@ -1,5 +1,5 @@
 import LocalNavigation from "@/components/LocalNavigation/LocalNavigation";
-import "./globals.css";
+import "./global.css";
 
 export default function RootLayout({
   children,
@@ -9,7 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <h1>MUSINSA</h1>
+        <h1 className="for-a11y">MUSINSA</h1>
         <LocalNavigation />
         {children}
       </body>
