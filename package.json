@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@notionhq/client": "^4.0.1",
     "msw": "^2.10.3",
     "next": "15.3.5",
+    "notion-client": "^7.4.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
