@@ -2,14 +2,15 @@ import ContentTabs from "@/components/ContentTabs/ContentTabs";
 import { getData } from "../../../notion";
 import { Metadata } from "next";
 
-const pageId = "239427665b958058bc76e92c8e27e2df";
+const pageId = process.env.NOTION_DATABASE_ID;
 
-export const matadata: Metadata = {
+export const metadata: Metadata = {
   title: "home",
 };
 
 const ItemCardApi = async () => {
   const data = await getData(pageId);
+  console.log(data);
 
   return <main></main>;
 };
@@ -17,8 +18,8 @@ const ItemCardApi = async () => {
 export default function Home() {
   return (
     <>
-      <ItemCardApi />
       <ContentTabs />
+      <ItemCardApi />
     </>
   );
 }
