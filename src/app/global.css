@@ -49,3 +49,14 @@ body {
     Apple SD Gothic Neo,
     sans-serif;
 }
+
+.list__gnb-navigation {
+  &::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 16px;
+    margin: 0 4px;
+    background-color: #fff6;
+  }
+}

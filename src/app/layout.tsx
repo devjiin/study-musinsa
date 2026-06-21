@@ -1,6 +1,7 @@
-import LocalNavigation from "@/components/LocalNavigation/LocalNavigation";
+import Gnb from "@/components/common/Gnb/Gnb";
 import "./global.css";
 import { Metadata } from "next";
+import Header from "@/components/common/Header/Header";
 
 export const metadata: Metadata = {
   title: {
@@ -10,17 +11,13 @@ export const metadata: Metadata = {
   description: "무신사",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
       <body>
-        <h1 className="for-a11y">MUSINSA</h1>
-        <LocalNavigation />
-        {children}
+        <Gnb />
+        <Header />
+        <main>{children}</main>
       </body>
     </html>
   );

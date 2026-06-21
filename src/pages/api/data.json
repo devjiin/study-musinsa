@@ -1,12 +1,28 @@
 {
-  "localNavigation": [
-    "MUSINSA",
-    "BEAUTY",
-    "PLAYER",
-    "OUTLET",
-    "BOUTIQUE",
-    "SHOES",
-    "KIDS"
+  "gnb": ["MUSINSA", "BEAUTY", "PLAYER", "OUTLET", "BOUTIQUE", "SHOES", "KIDS"],
+  "pageBeauty": {
+    "pageColor": "#f2665e"
+  },
+  "playerBeauty": {
+    "pageColor": "#37b0f4"
+  },
+  "mainBanners": [
+    {
+      "bannerId": "1",
+      "imageUrl": "https://image.msscdn.net/display/images/2026/06/12/40c0ef1f928c4ff4a98f20a8b1b86eb8.jpg",
+      "imageCaption": {
+        "text1": "큰텍스트1",
+        "text2": "작은텍스트1"
+      }
+    },
+    {
+      "bannerId": "2",
+      "imageUrl": "hhttps://image.msscdn.net/display/images/2026/06/12/f6d27140299f48c8b5c06c2b3f363f8a.jpg",
+      "imageCaption": {
+        "text1": "큰텍스트1",
+        "text2": "작은텍스트1"
+      }
+    }
   ],
   "contentTabs": [
     {

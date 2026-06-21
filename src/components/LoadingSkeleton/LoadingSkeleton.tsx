@@ -1,3 +1,3 @@
 export default function LoadingSkeleton() {
-	return <></>
+  return <>로딩중</>;
 }
